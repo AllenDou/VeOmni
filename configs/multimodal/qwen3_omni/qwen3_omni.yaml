@@ -36,7 +36,7 @@ train:
     lr_decay_style: cosine
   num_train_epochs: 3
   micro_batch_size: 1
-  global_batch_size: 32
+  global_batch_size: 1
   max_steps: 20
   init_device: meta
   checkpoint:

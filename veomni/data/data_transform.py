@@ -426,7 +426,7 @@ def process_sample_qwen_omni(
 
     source = kwargs.get("source_name") or sample.get("source") or sample.get("source_name")
     conversations = (
-        sample["conversations"] if ("conversations" in sample and len(sample["conversations"]) > 0) else sample
+        sample["conversations"] if ("conversations" in sample and sample["conversations"] is not None and len(sample["conversations"]) > 0) else sample
     )
     conversations = conv_preprocess(source, conversations, **kwargs)
     input_conversations = [
