@@ -34,13 +34,13 @@ train:
   optimizer:
     lr: 1.0e-5
     lr_decay_style: cosine
-  num_train_epochs: 3
+  num_train_epochs: 1
   micro_batch_size: 1
-  global_batch_size: 1
-  max_steps: 20
+  global_batch_size: 16
+  max_steps: 1
   init_device: meta
   checkpoint:
-    output_dir: qwen3_omni_sft
+    output_dir: /dev/shm/qwen3_omni_sft
   wandb:
     project: qwen3_omni
     name: qwen3_omni
