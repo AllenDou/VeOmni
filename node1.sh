@@ -1,0 +1,1 @@
+NNODES=8 MASTER_ADDR=10.0.10.251 MASTER_PORT=12345 NODE_RANK=1 NCCL_P2P_DISABLE=1 NCCL_IB_DISABLE=1 bash train.sh tasks/train_vlm.py configs/multimodal/qwen3_omni/qwen3_omni.yaml --model.model_path /nasmnt/Qwen3-Omni-30B-A3B-Instruct-merge
